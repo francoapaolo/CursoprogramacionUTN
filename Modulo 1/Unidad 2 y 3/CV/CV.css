@@ -13,12 +13,11 @@
 
 
 #Imagen{
-    position: static;
     flex-wrap: nowrap;
     border: 5px solid #61c1e7;
 	
 	margin-left: 80%;
-	width: 17%;
+	width: 206px;
 	height: 189px;
     text-align: center;
     margin-top: 10%;
@@ -31,15 +30,8 @@ h1{
 }
 
 #datosPersonales{
-
-    position:static ;
     margin-left: 80%;
     margin-top: 2%;
-    background-color: rgba(228, 228, 228, 0.719);
-    padding-left: 5px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    padding-top: 5px;
 }
 #listaDatos{
     margin-left: -10%;
