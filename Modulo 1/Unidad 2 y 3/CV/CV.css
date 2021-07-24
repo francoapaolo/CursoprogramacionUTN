@@ -1,9 +1,6 @@
 .Titulo{
     background-color: rgb(55, 73, 161);
     margin-top: -25% ;
-    /*padding-bottom: 5px;
-    padding-top: 5px;
-    */
     padding: 5px;
     text-align: left;
     position:fixed;
@@ -11,11 +8,8 @@
 }
 
 
-
 #Imagen{
-    flex-wrap: nowrap;
     border: 5px solid #61c1e7;
-	
 	margin-left: 80%;
 	width: 206px;
 	height: 189px;
@@ -41,7 +35,7 @@ h1{
 }
 
 #Experiencia{
-    margin-top: -46%;
+    margin-top: -40%;
     color: rgb(0, 0, 0);
 }
 
@@ -67,5 +61,4 @@ h1{
 a:hover{
     color: rgb(0, 252, 176);
     font-size: 12pt;
-
 }
