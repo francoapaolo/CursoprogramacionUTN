@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <h1>Formulario de contacto</h1>
+        <hr>
+        <form>
+            <p>
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Escriba aca"/>
+            </p>
+            <p>
+                <label for="Email">Email</label>
+                <input type="text" name="Email" placeholder="Escriba su email"/>
+            </p>
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" placeholder="12345678"/>
+            </p>
+            <p>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" cols="32" rows="7" placeholder="Escriba aqui..."></textarea>
+            </p>
+            <p>
+                <label for="contactarme">Contactarme por</label>
+                <select name="contactarme">
+                    <option value="email">Email</option>
+                    <option value="telefono">Telefono</option>
+                </select>
+            </p>
+            <input type="submit" value="Enviar"/>
+        </form>
+        <hr>
+    </body>
+</html>
