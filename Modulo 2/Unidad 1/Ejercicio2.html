@@ -8,11 +8,17 @@
     <body>
         <form action="">
             <label for="comentarios">Comentarios</label>
-            <textarea id="textarea" name="comentarios"></textarea>
+            <textarea id="idtextarea" name="comentarios"></textarea>
+            <div>Caracteres <span id="contador"></span>
+            </div>
         </form>
         <script>
-            var textarea = document.getElementById('textarea');
-            
+            var textarea = document.getElementById('idtextarea');
+            var contador = document.getElementById('contador');
+            textarea.addEventListener('keyup', function(){
+                contador.innerText = textarea.value.length
+            })
+
         </script>
     </body>
 </html>
