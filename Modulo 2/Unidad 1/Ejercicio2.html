@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ejercicio 2</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="comentarios">Comentarios</label>
+            <textarea id="idtextarea" name="comentarios"></textarea>
+            <div>Caracteres <span id="contador"></span>
+            </div>
+        </form>
+        <script>
+            var textarea = document.getElementById('idtextarea');
+            var contador = document.getElementById('contador');
+            textarea.addEventListener('keyup', function(){
+                contador.innerText = textarea.value.length
+            })
+
+        </script>
+    </body>
+</html>

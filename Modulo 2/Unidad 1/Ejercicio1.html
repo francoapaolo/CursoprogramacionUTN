@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Ejercicio 1</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ejercicio 1</title>
+
     <style>
-        #boton1 {
-            background-color: #6f6fda;
+        #boton {
+            background-color: #2b38f1;
             width: 130px;
             height: 130px;
             font-size: 100%;   
         }
         #boton2 {
-            background-color: #ff0040;
+            background-color: #2ab486;
             width: 130px;
             height: 130px;
             font-size: 100%;
         }
         #boton3 {
-            background-color: #9dff00;
+            background-color: #f72323;
             width: 130px;
             height: 130px;
             font-size: 100%;
@@ -26,27 +28,32 @@
             text-align: center;
         }
     </style>
-
 </head>
-
 <body>
+    <div id="botones">
+ 	
+    <button id="boton">cuadrado</button>
     
+    <button id="boton2">cuadrado</button>
+    
+    <button id="boton3">cuadrado</button>
+    </div>
     <script>
-
-        var boton1 = document.getElementById('boton1');
+    	
+        var boton = document.getElementById('boton');
         var boton2 = document.getElementById('boton2');
         var boton3 = document.getElementById('boton3');
         var fondo = document.body;
-        boton1.addEventListener('click' , function(e) {
+        boton.addEventListener('click' , function() {
             fondo.style.backgroundColor = "blue";
         });
+        boton2.addEventListener('click' , function() {
+            fondo.style.backgroundColor = "#33FFBB";
+        });
+        boton3.addEventListener('click' , function() {
+            fondo.style.backgroundColor = "red";
+        });
+
     </script>
-<div id="botones">
-    <button id="boton1">Cuadrado 1</button>
-    <button id="boton2">Cuadrado 2</button>
-    <button id="boton3">Cuadrado 3</button>
-</div>
 </body>
-
-
 </html>
