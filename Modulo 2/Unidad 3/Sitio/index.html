@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio de prueba</title>
+    <title>L'Arc Restaurant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -15,34 +15,34 @@
   <div id="barra">
    <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Barra del sitio de prueba</a>
+          <a class="navbar-brand" href="#">L'Arc Restaurant</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu del sitio</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" data-scroll href="#home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" data-scroll href="#conocenos">Visitanos</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                  <a class="nav-link dropdown-toggle" href="#novedades" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mas 
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" data-scroll href="#testimonios">Opiniones</a></li>
+                    <li><a class="dropdown-item" data-scroll href="#historia">Historia</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" data-scroll href="#contacto">Contacto</a></li>
                   </ul>
                 </li>
               </ul>
@@ -55,18 +55,18 @@
         </div>
       </nav>
   </div>
+
 <div class="container-fluid">
     <div id="home" class="row align-items-center hero">
-        <div class="col-lg-4 offset-lg-2">
-            <p>Bajada</p>
-            <h1>Titulo Principal</h1>
+        <div class="col-lg-4 offset-lg-4">
+            <h1>L'Arc Restaurant</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lorem eu quam faucibus, vel porttitor justo egestas. Integer sed risus eget quam maximus pharetra.</p>
         </div>
     </div>
-
+  
 
 <div id="novedades" class="row py-4">
-  <div class="col-md-5 offset-md-2 py-3">
+  <div class="col-md-5 offset-md-1">
     <h2>Novedades</h2>
     <ul class="lista-novedades">
       <li><a href="#"  data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="img/novedades01.jpg" alt="">Nuevas recetas</a></li>
@@ -76,11 +76,11 @@
       <li><a href="#"  data-bs-toggle="modal" data-bs-target="#modalEjemplo"><img src="img/novedades01.jpg" alt="">Nuevas recetas</a></li>
     </ul>
   </div>
-</div>
+
 <!--carrusel-->
 <div class="col-md-3">
-  <div class="rounded py-3 testimonios">
-    <h2 class="text-center">Testimonios</h2>
+  <div id="testimonios" class="rounded py-3 testimonios">
+    <h2 class="text-center">Opiniones</h2>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -90,30 +90,30 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="testimonio">
-          <h5>"Aca va un testimonio 1"</h5>
-          <p>Fransisco, Monte Grande</p>
+          <h5>"Excelente atención. Platos muy bien presentados y riquísimos. Muy recomendable"</h5>
+          <p>Marcela Filgueira, Monte Grande</p>
         </div>
       </div>
       <div class="carousel-item">
         <div class="testimonio">
-          <h5>"Aca va un testimonio 2"</h5>
-          <p>Flavia, Devoto</p>
+          <h5>"Lugar excelente, muy recomendable para ir con amigos o una cita romántica con tu pareja. Excelente atención y espacioso lugar."</h5>
+          <p>Matias Martinez, Adrogue</p>
         </div>
       </div>
       <div class="carousel-item">
         <div class="testimonio">
-          <h5>"Aca va un testimonio 3"</h5>
-          <p>Eric, Mataderos</p>
+          <h5>"Excelente ambiente. Platos abundantes y muy bien elaborados. Atención permanente, 100% recomendable."</h5>
+          <p>Victoria Caero, San Isidro</p>
         </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
 </div>
@@ -138,9 +138,84 @@
 </div>
 
 
+
+<!--Historia-->
+<div id="historia" class="row align-items-center py-4">
+  <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+    <img src="img/historia_1.jpg" alt="historia 1" class="img-fluid">
+  </div>
+  <div class="col-lg-2 col-md-3 d-none d-sm-block">
+    <img src="img/historia_2.jpg" alt="historia 1" class="img-fluid">
+  </div>
+  <div class="col-12 d-sm-none">
+    <img src="img/historia_3.jpg" alt="historia 1" class="img-fluid">
+  </div>
+  <div class="col-lg-4 col-md-6 mt-sm-0">
+    <h2>Historia</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan mollis sem, in posuere odio varius a. Sed venenatis ac metus at suscipit. Quisque pulvinar efficitur ex, et tristique risus finibus at. Mauris iaculis orci a metus porta molestie. Integer sed metus augue. Nulla ullamcorper risus sed condimentum porttitor.</p>
+  </div>
+</div>
+
+<!--Visitanos-->
+<div id="visitaContacto">
+<div id="conocenos" class="row py-4">
+  <div class="col-md-4 offset-md-2">
+    <h2>Visitanos</h2>
+    <div class="embed-responsive-embed-responsive-16by9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13521.47778385285!2d-58.424584680746484!3d-34.600699275789154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca62d4cf1563%3A0x686de505d84c67e6!2sAv.%20Medrano%20951%2C%20C1179AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1630704044473!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+</div> <!--cierre de "visitaHistoria"-->
+
+<!--Contacto-->
+<div class="col-md-4 mt-4 mt-sm-0">
+  <div id="contacto">
+<h2>Contactanos</h2>
+</div>
+<form>
+  <div class="form-row">
+  <div class="mb-3">
+    <div class="formulario">
+    <label for="formGroupExampleInput" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre">
+    </div>
+  </div>
+  <div class="mb-3">
+    <div class="formulario">
+    <label for="formGroupExampleInput2" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Apellido">
+    </div>
+    
+  </div>
+  <div class="mb-3">
+    <div class="formulario">
+    <label for="formGroupExampleInput" class="form-label">Email</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Email">
+    </div>
+  </div>
+  <div class="mb-3">
+    <div class="formulario">
+    <label for="formGroupExampleInput2" class="form-label">Telefono</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Telefono">
+    </div>
+  </div>
+  <div id="enviar">
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
 <footer>
- <p class="text-center">Diseñado por Franco Antonio Paolo</p>
+ <p class="text-center">Diseñado por Franco Antonio Paolo</p> 
+
 </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+      </script> 
 </body>
 </html>
